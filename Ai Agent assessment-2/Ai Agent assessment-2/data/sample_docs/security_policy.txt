@@ -1,0 +1,29 @@
+# ACME CORP GLOBAL INFORMATION SECURITY & AI GOVERNANCE POLICY (DOC-SEC-2025-v3)
+
+## 1. Introduction and Scope
+This policy applies to all ACME Corp employees, contractors, third-party vendors, and autonomous AI agents operating within our corporate infrastructure or handling customer data. All computing assets, cloud environments (AWS, GCP, Azure), and internal networks fall under this jurisdiction.
+
+## 2. Autonomous AI Agent Deployment Guidelines
+2.1 All autonomous agents must execute with least-privilege service accounts. Agents must never possess direct root access or AWS AdministratorAccess.
+2.2 Agentic tool-calling must be strictly constrained using pre-approved API whitelists and parameter schema validation.
+2.3 Any autonomous action affecting production databases (including schema updates, record deletions, or batch modifications) requires explicit human-in-the-loop (HITL) authorization.
+2.4 Agent reasoning traces and execution logs must be preserved in tamper-evident S3 buckets with Object Lock enabled for a minimum retention duration of 365 days.
+
+## 3. Credential and Key Management
+3.1 Long-lived static API keys are strictly prohibited in code repositories, configuration files, or container images.
+3.2 All LLM API keys (e.g. OpenAI, Google Gemini, Anthropic) must be stored in AWS Secrets Manager or HashiCorp Vault with 90-day automatic rotation.
+3.3 Any API key detected in plaintext logs or public repositories must be revoked within 15 minutes of detection.
+
+## 4. Network and Access Security
+4.1 Direct SSH access to production bastions from the public internet (0.0.0.0/0) is forbidden. All administrative access must traverse the corporate Zero-Trust Network Access (ZTNA) VPN with Hardware MFA (FIDO2 / YubiKey).
+4.2 Failed SSH authentication attempts exceeding 5 attempts within a 2-minute window must trigger automated IP throttling and fail2ban blacklisting for 24 hours.
+4.3 Public-facing HTTP/S endpoints must be shielded by an Enterprise Web Application Firewall (WAF) inspecting for OWASP Top 10 vectors, including SQL Injection, Cross-Site Scripting (XSS), and Server-Side Request Forgery (SSRF).
+
+## 5. Incident Response and Severity Classification
+- Level 1 (Low): Single isolated failed login attempt or port scan without breach indicators. SLA: 24 hours.
+- Level 2 (Medium): Repeated unauthorized access attempts blocked by perimeter firewalls or unauthorized query anomalies. SLA: 4 hours.
+- Level 3 (High): Credential brute-force success, suspicious IAM role assumption, or targeted injection exploit against internal services. SLA: 1 hour.
+- Level 4 (Critical): Active data exfiltration, root compromise, ransomware deployment, or unauthorized administrative privilege grant. SLA: Immediate (15 minutes).
+
+## 6. Compliance and Auditing
+Mandatory quarterly compliance reviews are conducted under SOC 2 Type II and ISO 27001 standards. Failure to comply with these security directives will lead to immediate revocation of system access and potential disciplinary review.

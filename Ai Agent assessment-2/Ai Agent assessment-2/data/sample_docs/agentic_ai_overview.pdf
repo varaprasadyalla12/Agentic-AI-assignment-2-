@@ -1,0 +1,112 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 7 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Length 1169 >>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+16 TL
+/F1 18 Tf (Architectural Foundations of Agentic AI Systems) Tj T* /F1 12 Tf
+(Technical Whitepaper - Version 2.4) Tj T*
+T*
+/F1 14 Tf (1. Executive Summary) Tj T* /F1 12 Tf
+(Autonomous Agentic AI systems represent an evolutionary leap from passive language models) Tj T*
+(to active decision-makers capable of perception, planning, tool usage, and memory retention.) Tj T*
+(Modern agents operate via iterative reasoning loops such as ReAct \(Reasoning + Acting\),) Tj T*
+(evaluating intermediate observations to navigate dynamic, non-deterministic environments.) Tj T*
+T*
+/F1 14 Tf (2. Core Pillars of Agentic Architecture) Tj T* /F1 12 Tf
+(An agentic system relies upon four foundational subsystems:) Tj T*
+(1. Perception and Context Processing: Ingestion of multimodal prompts, environment state, and documents.) Tj T*
+(2. Planning and Decomposition: Breaking down complex objectives into directed acyclic task graphs.) Tj T*
+(3. Tool Integration: Executing deterministic APIs, bash terminals, web search, and vector databases.) Tj T*
+(4. Memory Systems: Short-term episodic context windows combined with long-term semantic stores.) Tj T*
+ET
+endstream
+endobj
+4 0 obj
+<< /Length 1267 >>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+16 TL
+/F1 18 Tf (Memory Systems and Multi-Agent Coordination) Tj T* /F1 12 Tf
+T*
+/F1 14 Tf (3. Memory Hierarchy in Production Agents) Tj T* /F1 12 Tf
+(Agents utilize a dual-tiered memory architecture:) Tj T*
+(- Working Memory: Maintains immediate turn-by-turn conversational context and tool responses.) Tj T*
+(- Semantic Episodic Memory: Vector stores \(e.g. Chroma, FAISS, Milvus\) that index past interactions.) Tj T*
+(Experiments demonstrate that semantic retrieval reduces hallucination rates by up to 64% in QA.) Tj T*
+T*
+/F1 14 Tf (4. Multi-Agent Collaboration Patterns) Tj T* /F1 12 Tf
+(Complex enterprise objectives exceed the capabilities of single monolithic agents.) Tj T*
+(Multi-agent patterns divide labor among specialized personas:) Tj T*
+(- Hierarchical Delegation: A Supervisor Agent plans and assigns tasks to subordinate workers.) Tj T*
+(- Peer-to-Peer Consensus: Agents critique each others outputs via debate loops before finalizing.) Tj T*
+(- Blackboard Architecture: Specialized agents post partial solutions to a shared message board.) Tj T*
+(In benchmark tests, three collaborating agents \(Researcher, Analyst, Reporter\) achieved a 42%) Tj T*
+(higher fact-verification score than a single zero-shot prompt.) Tj T*
+ET
+endstream
+endobj
+5 0 obj
+<< /Length 1120 >>
+stream
+BT
+/F1 12 Tf
+50 750 Td
+16 TL
+/F1 18 Tf (Security, Safety, and Evaluation Metrics) Tj T* /F1 12 Tf
+T*
+/F1 14 Tf (5. Security Vectors in Agentic AI) Tj T* /F1 12 Tf
+(Because agents possess tool-execution capabilities, they introduce new attack surfaces:) Tj T*
+(- Indirect Prompt Injection: Malicious instructions embedded within retrieved web pages or PDFs.) Tj T*
+(- Privilege Escalation: Agents inadvertently running destructive bash commands or database drops.) Tj T*
+(- Data Exfiltration: Attackers tricking agents into sending proprietary context to external endpoints.) Tj T*
+(Mitigation requires Sandboxed Runtimes, Tool Execution Guardrails, and Human-in-the-Loop approvals.) Tj T*
+T*
+/F1 14 Tf (6. Evaluation Frameworks) Tj T* /F1 12 Tf
+(Evaluating agent performance requires multifaceted metrics:) Tj T*
+(- Task Completion Rate \(TCR\): Percentage of end-to-end tasks successfully executed without errors.) Tj T*
+(- Retrieval Precision@K: Ground truth relevance of chunks surfaced during RAG operations.) Tj T*
+(- Tool Call Efficiency: Ratio of necessary tool invocations versus redundant retry loops.) Tj T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 3 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 1 0 R >> >> >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000154 00000 n 
+0000001375 00000 n 
+0000002694 00000 n 
+0000003866 00000 n 
+0000003992 00000 n 
+0000004118 00000 n 
+0000004244 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+4293
+%%EOF

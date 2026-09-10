@@ -1,0 +1,13 @@
+Oct 12 04:12:01 prod-bastion-01 sshd[14201]: Failed password for invalid user admin from 198.51.100.23 port 41202 ssh2
+Oct 12 04:12:03 prod-bastion-01 sshd[14205]: Failed password for invalid user root from 198.51.100.23 port 41206 ssh2
+Oct 12 04:12:05 prod-bastion-01 sshd[14209]: Failed password for invalid user test from 198.51.100.23 port 41210 ssh2
+Oct 12 04:12:07 prod-bastion-01 sshd[14213]: Failed password for invalid user oracle from 198.51.100.23 port 41214 ssh2
+Oct 12 04:12:09 prod-bastion-01 sshd[14217]: Failed password for invalid user deploy from 198.51.100.23 port 41218 ssh2
+Oct 12 04:12:12 prod-bastion-01 sshd[14221]: Failed password for user devops from 198.51.100.23 port 41222 ssh2
+Oct 12 04:12:14 prod-bastion-01 sshd[14225]: Failed password for user devops from 198.51.100.23 port 41226 ssh2
+Oct 12 04:12:16 prod-bastion-01 sshd[14229]: Failed password for user devops from 198.51.100.23 port 41230 ssh2
+Oct 12 04:12:19 prod-bastion-01 sshd[14233]: Accepted password for devops from 198.51.100.23 port 41234 ssh2
+Oct 12 04:12:20 prod-bastion-01 systemd-logind[782]: New session 492 of user devops.
+Oct 12 04:12:35 prod-bastion-01 sudo:   devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/bash -c "cat /etc/shadow"
+Oct 12 04:13:01 prod-bastion-01 sshd[14300]: Failed password for invalid user support from 203.0.113.88 port 55123 ssh2
+Oct 12 04:13:04 prod-bastion-01 sshd[14304]: Failed password for invalid user support from 203.0.113.88 port 55127 ssh2

@@ -1,0 +1,68 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJ456EXAMPLE",
+        "arn": "arn:aws:iam::123456789012:user/intern-dev",
+        "accountId": "123456789012",
+        "userName": "intern-dev"
+      },
+      "eventTime": "2025-10-15T02:14:10Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "185.220.101.5",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; Tor Browser)",
+      "responseElements": {
+        "ConsoleLogin": "Success"
+      },
+      "additionalEventData": {
+        "MFAUsed": "No"
+      }
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJ456EXAMPLE",
+        "arn": "arn:aws:iam::123456789012:user/intern-dev",
+        "accountId": "123456789012",
+        "userName": "intern-dev"
+      },
+      "eventTime": "2025-10-15T02:15:30Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachUserPolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "185.220.101.5",
+      "userAgent": "aws-cli/2.13.5",
+      "requestParameters": {
+        "userName": "intern-dev",
+        "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "responseElements": null
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJ456EXAMPLE",
+        "arn": "arn:aws:iam::123456789012:user/intern-dev",
+        "accountId": "123456789012",
+        "userName": "intern-dev"
+      },
+      "eventTime": "2025-10-15T02:17:05Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "185.220.101.5",
+      "userAgent": "aws-cli/2.13.5",
+      "requestParameters": {
+        "bucketName": "acme-corp-prod-financial-records",
+        "key": "q3_customer_pii_export.csv.enc"
+      },
+      "responseElements": null
+    }
+  ]
+}
